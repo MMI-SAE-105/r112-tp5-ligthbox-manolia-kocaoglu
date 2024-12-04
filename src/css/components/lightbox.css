@@ -4,11 +4,27 @@
 #lightbox::backdrop {
     background: red;
     opacity: 40%;
+    animation: fondu 1s forwards;
 }
-  #lightbox {
-    position: fixed;
-    border-radius: 20px;
-    border-color: blue;
-  }
 
-  
+  #lightbox {
+    animation: open 1s forwards;
+}
+
+@keyframes fondu{
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 50%;
+  }
+}
+
+@keyframes open {
+  from {
+    transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
