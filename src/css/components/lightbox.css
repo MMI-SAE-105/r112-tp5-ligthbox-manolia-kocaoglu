@@ -1,6 +1,11 @@
 /**
 * Lightbox
 */
-dialog::backdrop {
-    background: rgba(255,70,0,.25);
+#lightbox::backdrop {
+    background: red;
+    opacity: 40%;
+}
+  #lightbox {
+    border-radius: 20px;
+    border-color: blue;
   }
