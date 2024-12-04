@@ -6,6 +6,7 @@
     opacity: 40%;
 }
   #lightbox {
+    position: fixed;
     border-radius: 20px;
     border-color: blue;
   }
